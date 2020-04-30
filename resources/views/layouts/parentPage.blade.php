@@ -14,6 +14,7 @@
 	@include('partials.navbar')
 	
 		<div class="container">
+			@include('partials.messages')
 			@yield('content')
 		</div>
 

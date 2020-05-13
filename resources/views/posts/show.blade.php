@@ -6,10 +6,12 @@
 
 	<h1> {{$post->title}} </h1>
 	<div>
-		{{$post->body}}
+		{!!$post->body!!}
 	</div>
 	
 	<hr>
+	<a href="/posts/{{$post->id}}/edit" class="btn btn-default">Edit Post</a>
+	<br>
 	<small>Written on {{ $post->created_at }} </small>
 
 @endsection
